@@ -206,7 +206,7 @@
         "typeHandlerVersion": "1.3",
         "settings": {
           "fileUris": "[variables('linuxScriptFiles')]",
-          "commandToExecute": "[concat(variables('commandToinstall'), ' ', parameters('MachinePrefix'),'-',padLeft(copyindex(1),2,'0'))]"
+          "commandToExecute": "[variables('commandToinstall')]"
         }
       }
     }
