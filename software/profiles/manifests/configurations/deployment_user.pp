@@ -18,10 +18,15 @@ class profiles::configurations::deployment_user (
     }
   }
 
+  ensure_resource('Group', $group_name, {
+    ensure => present
+  })
+
   homes { $user_name:
     ensure  => $ensure,
     ssh_key => $ssh_key,
     user    => $user,
+    require => Group[$group_name],
   }
 
 }

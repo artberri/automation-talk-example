@@ -22,10 +22,10 @@ cd /data
 git clone https://github.com/artberri/automation-talk-example.git puppet
 
 echo "[Provisioning Script] - [Part 4 of 5] - Cloning the puppet repo"
-apt-get install ruby-full rubygems
+apt-get install -y ruby-full ruby1.9.1-dev build-essential
 cd /data/puppet
 gem install bundler
-bundle install --path vendor/bundle
+bundle install
 bundle exec librarian-puppet install
 
 echo "[Provisioning Script] - [Part 5 of 5] - Running puppet"
