@@ -15,7 +15,7 @@ class roles::websites::sample (
     deploy_user      => $deploy_user,
     deploy_group     => $deploy_group,
     storage_dir      => $storage_dir,
-    website_hostname => ['sample.berriart.com'],
+    website_hostname => ['tikiexample.westeurope.cloudapp.azure.com'],
   }
 
 }
