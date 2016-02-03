@@ -6,7 +6,9 @@
   "main": "app/js/reveal.js",
   "scripts": {
     "test": "grunt test",
-    "start": "grunt serve"
+    "start": "grunt serve",
+    "build": "grunt",
+    "build": "grunt package"
   },
   "author": {
     "name": "Alberto Varela",

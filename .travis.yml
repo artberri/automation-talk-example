@@ -3,5 +3,8 @@ node_js:
   - 4.1.1
 before_script:
   - npm install -g grunt-cli
+after_script:
+  - npm run-script build
+  - npm run-script package
 deploy:
     skip_cleanup: true
