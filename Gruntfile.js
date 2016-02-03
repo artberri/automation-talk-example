@@ -151,6 +151,7 @@ module.exports = function(grunt) {
                         'app/lib/**',
                         'app/images/**',
                         'app/plugin/**',
+                        'app/slides/**',
                         'app/**.md'
                     ],
                     dest: 'build/',
