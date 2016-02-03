@@ -1,9 +1,15 @@
 /* global module:false */
 module.exports = function(grunt) {
+    var fs = require('fs');
     var port = grunt.option('port') || 8000;
     var base = grunt.option('base') || 'app';
+    var deployKey = null;
 
     require('load-grunt-tasks')(grunt);
+
+    if (fs.existsSync('/home/runner/.ssh/azure_id_rsa')) {
+        deployKey = fs.readFileSync('/home/runner/.ssh/azure_id_rsa');
+    }
 
     // Project configuration
     grunt.initConfig({
@@ -169,7 +175,7 @@ module.exports = function(grunt) {
                 options: {
                     host: 'tikiexample.westeurope.cloudapp.azure.com',
                     username: 'tikitalka',
-                    agent: process.env.SSH_AUTH_SOCK,
+                    privateKey: deployKey,
                     port: '22',
                     releases_to_keep: '5'
                 }
