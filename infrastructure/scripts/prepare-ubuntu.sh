@@ -2,6 +2,7 @@
 
 echo "[Provisioning Script] - Start"
 
+[[ -v HOME ]] || export HOME=/root
 SERVER_NAME=$(hostname -f)
 UBUNTU_CODE_NAME=`lsb_release --codename | cut -f2`
 
