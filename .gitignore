@@ -3,4 +3,11 @@
 .tmp/
 modules/
 vendor/
+node_modules/
+.sass-cache
 *.lock
+app/log/*.log
+app/tmp/**
+app/css/reveal.css
+app/css/reveal.min.css
+app/js/reveal.min.js
