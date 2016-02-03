@@ -7,7 +7,8 @@
   "scripts": {
     "test": "grunt test",
     "start": "grunt serve",
-    "build": "grunt package"
+    "build": "grunt build",
+    "deploy": "grunt deploy"
   },
   "author": {
     "name": "Alberto Varela",
