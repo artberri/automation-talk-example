@@ -169,7 +169,7 @@ module.exports = function(grunt) {
                 options: {
                     host: 'tikiexample.westeurope.cloudapp.azure.com',
                     username: 'tikitalka',
-                    agent: process.env.SSH_AUTH_SOCK,
+                    password: process.env.SAMPLE_DEPLOY_PASS,
                     port: '22',
                     releases_to_keep: '5'
                 }
