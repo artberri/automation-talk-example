@@ -11,3 +11,4 @@ app/tmp/**
 app/css/reveal.css
 app/css/reveal.min.css
 app/js/reveal.min.js
+build/
