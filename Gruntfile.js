@@ -162,8 +162,8 @@ module.exports = function(grunt) {
         environments: {
             options: {
                 local_path: 'build/app',
-                current_symlink: 'sample',
-                deploy_path: '/data/www'
+                current_symlink: 'current',
+                deploy_path: '/data/www/sample'
             },
             production: {
                 options: {

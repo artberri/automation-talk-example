@@ -5,8 +5,9 @@ class profiles::configurations::website (
     $website_hostname,
   ) {
 
-  $base_directory      = "${storage_dir}/www"
-  $website_directory   = "${base_directory}/sample"
+  $base_directory    = "${storage_dir}/www"
+  $website_directory = "${base_directory}/sample"
+  $current_directory = "${website_directory}/current"
 
   include profiles::configurations::deployment_user
 
@@ -23,14 +24,22 @@ class profiles::configurations::website (
     require => File[$base_directory],
   })
 
+  ensure_resource('File', $current_directory, {
+    ensure  => directory,
+    owner   => $deploy_user,
+    mode    => '0755',
+    group   => $deploy_group,
+    require => File[$website_directory],
+  })
+
   class { 'profiles::applications::nginx':
-    require => File[$website_directory]
+    require => File[$current_directory]
   }
 
   nginx::resource::vhost { 'sample-vhost':
     ensure      => present,
     index_files => ['index.html'],
-    www_root    => $website_directory,
+    www_root    => $current_directory,
     server_name => $website_hostname,
     access_log  => '/var/log/nginx/puppet_access.log',
     error_log   => '/var/log/nginx/puppet_error.log',
