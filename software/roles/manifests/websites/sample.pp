@@ -1,7 +1,7 @@
 class roles::websites::sample (
     $storage_dir  = '/data',
     $deploy_user  = 'tikitalka',
-    $deploy_group = 'deploy',
+    $deploy_group = 'tikitalka',
   ) {
 
   class { 'profiles::configurations::deployment_user':
