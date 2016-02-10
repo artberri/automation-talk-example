@@ -4,7 +4,7 @@
 	<head>
 		<meta charset="utf-8">
 
-		<title>reveal.js – The HTML Presentation Framework</title>
+		<title>Automation: Infrastruture, Software & Deploy</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
 		<meta name="author" content="Hakim El Hattab">
@@ -122,7 +122,9 @@
 
 				<section data-background="#b5533c">
 					<section>
-						<h2>Why should I automate?</h2>
+						<h2>Why should I automate?</h2>    <aside class="notes">
+        Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+    </aside>
 					</section>
 					<section>
 						<blockquote>
@@ -146,6 +148,9 @@
 							<li class="fragment">
 								<strong>Repeatability</strong>: Don't waste time on doing what you already do
 							</li>
+							<li class="fragment">
+								<strong>Flexibilty</strong>: Ability to scale (Black Friday!!)
+							</li>
 						</ul>
 					</section>
 					<section>
@@ -162,12 +167,12 @@
 								<tr class="fragment">
 									<td>New server request</td>
 									<td>4 days</td>
-									<td>15 min</td>
+									<td>1h</td>
 								</tr>
 								<tr class="fragment">
 									<td>Soft provisioning</td>
 									<td>1 day</td>
-									<td>15 min</td>
+									<td>1h</td>
 								</tr>
 								<tr class="fragment">
 									<td>Server Documentation</td>
@@ -176,23 +181,27 @@
 								</tr>
 								<tr class="fragment">
 									<td>Deploy frequency</td>
-									<td>1 / fortnight</td>
-									<td>1 / day</td>
+									<td>2/3 per day</td>
+									<td>5/15 day</td>
 								</tr>
 								<tr class="fragment">
 									<td>Time to deploy</td>
-									<td>2 hour</td>
+									<td>1-3 hour</td>
 									<td>5 min</td>
 								</tr>
 								<tr class="fragment">
-									<td>Avg. Rejected deploys (doc)</td>
-									<td>2</td>
-									<td>0</td>
+									<td>Avg. Rejected deploys</td>
+									<td>50%</td>
+									<td>0%</td>
 								</tr>
 
 							</tbody>
 						</table>
 					</section>
+				</section>
+
+				<section>
+					<h1>Sci-Fi or Reality?</h1>
 				</section>
 
 				<section data-background="#3C91B5">
@@ -219,33 +228,48 @@
 					</section>
 
 					<section>
-						<h2>[Todo] Migration</h2>
+						<h2>Migration</h2>
 
-						<p>Progresive or all at once?</p>
+						<h4>Our experience</h4>
+						<ul>
+							<li class="fragment">3 Data Centers: Europe, USA, Asia</li>
+							<li class="fragment">Before: 75 server per datacenter</li>
+							<li class="fragment">After: 170 server per datacenter
+								<ul class="fragment">
+									<li>High Availabilty</li>
+									<li>Split of shared servers</li>
+									<li>New products</li>
+									<li class="fragment">PaaS
+										<ul>
+											<li>Redis => Redis as a Service</li>
+											<li>MSMQ => ServiceBus</li>
+											<li>IIS => Web App</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+
+					<section>
+						<h2>Migration</h2>
+						<img class="fragment" src="images/everythingok.png">
 					</section>
 				</section>
 
 				<section>
-					<section>
-						<h1>Sci-Fi or Reality?</h1>
-					</section>
-
+					<h1>Sci-Fi or Reality?</h1>
 				</section>
 
 				<section>
-					<section>
-						<h2>It's real</h2>
-						<img src="images/final.png">
-					</section>
+					<h2>Sci-Fi</h2>
+					<img src="images/doubleFacePalm.png">
 				</section>
 
 				<section>
-					<section>
-						<h2>Thanks !</h2>
-						<br><br><br><br>
-						<p><small style="color: #666;">Thanks to you too Ian, none of this would be possible without you</small></p>
-					</section>
-
+					<h2>Thanks !</h2>
+					<br><br><br><br>
+					<p><small style="color: #666;">Thanks to you too Ian, none of this would be possible without you</small></p>
 				</section>
 
 			</div>
