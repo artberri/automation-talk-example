@@ -29,6 +29,8 @@ azure group deployment create --resource-group tiki-example --template-file infr
 
 You can see the code source used in the [infrastructure](infrastructure) folder.
 
+The passwords for the machine should not be in the repo, neither in a public repo (of course) but this is just an example.
+
 ### Software provisioning
 
 To automate the software provisioning in this example I used [Puppet](https://puppetlabs.com/). 
