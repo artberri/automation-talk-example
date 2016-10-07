@@ -164,13 +164,13 @@ module.exports = function(grunt) {
             options: {
                 local_path: 'build/app',
                 current_symlink: 'current',
-                deploy_path: '/data/www/sample'
+                deploy_path: '/var/www/sample'
             },
             production: {
                 options: {
-                    host: 'tikiexample.westeurope.cloudapp.azure.com',
-                    username: 'tikitalka',
-                    password: process.env.SAMPLE_DEPLOY_PASS,
+                    host: '52.212.15.110',
+                    username: 'deploy',
+                    privateKey: require('fs').readFileSync(process.env.BERRIART_DEPLOY_KEY),
                     port: '22',
                     releases_to_keep: '5'
                 }
