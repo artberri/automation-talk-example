@@ -1,0 +1,13 @@
+---
+:backends:
+  - yaml
+
+:hierarchy:
+  - "%{::environment}/%{::role}"
+  - "%{::environment}"
+  - base
+
+:yaml:
+  :datadir: /tmp/hiera/
+
+:merge_behavior: deeper

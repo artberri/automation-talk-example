@@ -1,0 +1,6 @@
+deployment::username: 'deploy'
+deployment::ssh_key: 'AAAAB3NzaC1yc2EAAAADAQABAAABAQDFv9OE7eRMx+h4040jTNhOUyhltU6xCSntpe1KwVYnSXSVI8NLyuLy4pwRS1cnToHB/lhSu/mlpq6BALBC3kgpPbM8CSQmIJnjTLEHPemkXHdjD6I0sc5Xf+JgQusv7Lks0y+0hrdGls82oRxdaV9e5Xng0oAOXGbxhkXVWuZd78/Vczca43cW3zXtt4AzzluIFGybbP1d3BBsPdWgc7tl9oWtikO0mD228pWHjPWR+qUwWJPn6ykPZIaiXm89+/RaeJ+iWQ8iFgxuqOOrXSW0ZL/9NPVqO7EARdVMc5ZLr3u/2PFQksjGltasHDoGVhUwNIB2eYAVKNlKUwbQ1tdR'
+deployment::group: 'deploy'
+
+website::storage_directory: '/var'
+website::hostname: ['sample.com']

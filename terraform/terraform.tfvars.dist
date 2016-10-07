@@ -1,0 +1,5 @@
+aws_access_key   = ""
+aws_secret_key   = ""
+key_name         = "sample"
+public_key_path  = "/home/alberto/.ssh/berriart.pub"
+private_key_path = "/home/alberto/.ssh/berriart"

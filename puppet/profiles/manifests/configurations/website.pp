@@ -1,9 +1,10 @@
-class profiles::configurations::website (
-    $deploy_user,
-    $deploy_group,
-    $storage_dir,
-    $website_hostname,
-  ) {
+class profiles::configurations::website {
+
+  $deploy_user   = hiera('deployment::username')
+  $deploy_group  = hiera('deployment::group')
+
+  $storage_dir   = hiera('website::storage_directory')
+  $website_hostname  = hiera('website::hostname')
 
   $base_directory    = "${storage_dir}/www"
   $website_directory = "${base_directory}/sample"
